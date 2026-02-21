@@ -12,10 +12,17 @@ Not hosted
 Project Description
 Data Residue is a secure session-based system that prevents sensitive files from remaining on shared computers. It stores files in a temporary workspace and automatically wipes all data after use, ensuring zero residual traces.
 
-The Problem statement
+How to run:
+
+
+First, the operator clicks **“Start Job”**, which creates a secure temporary session. A **QR code** is generated on the right side. The customer scans this QR code using their phone (connected to the same Wi-Fi) and uploads the required document. The uploaded files automatically appear in the **“Files in Current Job”** list inside the application.
+
+The operator then selects a file and clicks **“Open Selected”** to print it normally. After printing is completed, the operator clicks **“End Job (Wipe)”**, which shows a confirmation dialog. Once confirmed, the system securely deletes all files from the session folder, ensuring no sensitive data remains on the computer.
+
+The Problem statement:
 We are solving the problem of sensitive files being left behind on shared computers after printing or processing. These leftover documents create serious privacy and security risks. Our system ensures files are used temporarily and automatically wiped, leaving no data residue.
 
-The Solution
+The Solution:
 We solve it by creating a secure, session-based workspace where all files are temporarily stored and processed. Once the task is completed, the system automatically wipes all data from the computer. It also follows a zero-trust approach by cleaning any leftover files on startup to prevent accidental data residue.
 
 Technical Details
